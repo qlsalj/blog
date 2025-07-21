@@ -1,36 +1,41 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: 成贤神秘打野点
+description: 恭喜你来到了成贤神秘地带
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 欢迎来到东大成贤
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/houston.webp  # image哦
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 学院生活指南
+      link: /guides/freshman
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: 计协招新信息
+      link: /pages/recruitment
+      icon: right-arrow
+      variant: minimal # 不亮
+    - text: 友站 
+      link: /
       icon: external
       variant: minimal
+	# ！！！制表符\t 不得用于缩进！！！ 
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 不许看下面
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="更新内容" icon="pencil">
+    编辑 `src/content/docs/index.mdx` 来更新此页面的内容。
+  </Card>
+  <Card title="添加新内容" icon="add-document">
+    将 Markdown 或 MDX 文件添加到 `src/content/docs` 目录来创建新页面。
+  </Card>
+  <Card title="配置站点" icon="setting">
+    在 `astro.config.mjs` 中编辑侧边栏和其他站点配置。
+  </Card>
+  <Card title="阅读文档" icon="open-book">
+    在 [Starlight 文档](https://starlight.astro.build/) 中了解更多。
+  </Card>
 </CardGrid>

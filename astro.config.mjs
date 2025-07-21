@@ -4,9 +4,11 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://qlsalj.github.io/blog/',
+	base: '/blog/',
 	integrations: [
 		starlight({
-			title: '成贤神秘小站点',  // 修改站点标题
+			title: '成贤神秘小站点',
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/qlsalj/blog' }
 			],

@@ -19,6 +19,9 @@ export default defineConfig({
 					],
 				},
 			],
+			editLink: {
+				baseUrl: 'https://github.com/qlsalj/blog/edit/main/',
+			},
 		}),
 	],
 });

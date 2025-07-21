@@ -6,7 +6,8 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://git.lvjinlove.cn',
+	site: 'https://qlsalj.github.io/blog/',
+	base: '/blog/',
 
 	integrations: [
 		starlight({

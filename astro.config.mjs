@@ -2,10 +2,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://qlsalj.github.io/blog/',
 	base: '/blog/',
+
 	integrations: [
 		starlight({
 			title: '成贤神秘小站点',
@@ -26,4 +29,6 @@ export default defineConfig({
 			},
 		}),
 	],
+
+	adapter: vercel(),
 });

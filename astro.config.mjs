@@ -19,6 +19,12 @@ export default defineConfig({
 					label: '新生指南',
 					items: [
 						{ label: '新生必看', slug: 'guides/freshman' },
+						{ label: '规则怪谈', slug: 'guides/bobo' },
+					],
+				},
+				{
+					label: '计协事务',
+					items: [
 						{ label: '计协招新', slug: 'pages/recruitment' },
 					],
 				},

@@ -1,0 +1,56 @@
+---
+title: test
+description: test
+---
+import Box from '../../../components/Box.astro';
+import MultipleChoice from '../../../components/MultipleChoice.astro';
+import Option from '../../../components/Option.astro';
+
+
+<Box icon="question-mark">
+
+### 小测试
+
+下面哪个是……
+1. 用于修改文件内容的代码编辑器？
+
+    <MultipleChoice>
+      <Option>
+        浏览器
+      </Option>
+      <Option>
+        终端
+      </Option>
+      <Option isCorrect>
+        VS Code
+      </Option>
+    </MultipleChoice>
+
+2. 在线的代码仓库和版本控制应用？
+
+    <MultipleChoice>
+      <Option isCorrect>
+        GitHub
+      </Option>
+      <Option>
+        终端
+      </Option>
+      <Option>
+        VS Code
+      </Option>
+    </MultipleChoice>
+
+3. 运行命令的应用程序？
+    <MultipleChoice>
+      <Option>
+        GitHub
+      </Option>
+      <Option isCorrect>
+        终端
+      </Option>
+      <Option>
+        浏览器
+      </Option>
+    </MultipleChoice>
+
+</Box>

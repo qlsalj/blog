@@ -3,11 +3,11 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 import vercel from '@astrojs/vercel';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://git.lvjinlove.cn',
-
 	integrations: [
 		starlight({
 			title: '成贤神秘小站点',
@@ -20,6 +20,7 @@ export default defineConfig({
 					items: [
 						{ label: '新生必看', slug: 'guides/freshman' },
 						{ label: '规则怪谈', slug: 'guides/bobo' },
+						{ label: 'test', slug: 'guides/test' }
 					],
 				},
 				{
@@ -33,7 +34,7 @@ export default defineConfig({
 				baseUrl: 'https://github.com/qlsalj/blog/edit/main/',
 			},
 		}),
+		mdx(),
 	],
-
 	adapter: vercel(),
 });
